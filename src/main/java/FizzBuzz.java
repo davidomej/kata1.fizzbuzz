@@ -1,16 +1,14 @@
 public class FizzBuzz{
 
-     public void print_number(){
-         int fizz;
-         int buzz;
-        for(int n = 1; n<100; n++){
-            if(n%3==0){
-                System.out.println("fizz");
-            }else if(n%5==0) {
-                System.out.println("buzz");
-            }else {
-                System.out.println(n);
-            }
+    String play(int i){
+        if((i%3==0) && (i%5==0)){
+            return "Fizz";
+        }else if(i%5==0){
+            return "Buzz";
+        }else if(i%3==0) {
+            return "FizzBuzz";
+        }else{
+            return (""+i);
         }
     }
 }
