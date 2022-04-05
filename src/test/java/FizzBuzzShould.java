@@ -5,23 +5,15 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FizzBuzzShould {
 
     @Test
-    void test_passed(){
+    void test_library(){
         FizzBuzz fb = new FizzBuzz();
-        assertEquals("1",fb.play(1));
-        assertEquals("Buzz", fb.play(25));
-        assertEquals("Fizz", fb.play(3));
-        assertEquals("FizzBuzz", fb.play(15));
+        assertEquals(fb.play(15), "FizzBuzz");
     }
 
 
-    @Test
-    void test_failed(){
-        FizzBuzz fb = new FizzBuzz();
-        assertEquals("3",fb.play(3));
-        assertEquals("Fizz", fb.play(1));
-        assertEquals("Buzz", fb.play(3));
-        assertEquals("FizzBuzz", fb.play(15));
-    }
+
+
+
 
 
 }
